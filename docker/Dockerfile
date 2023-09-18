@@ -15,12 +15,13 @@ RUN apt-get install -qq -y \
 	  libtool
 WORKDIR /root/libhybris
 COPY ./hybris .
-COPY ./android-headers-30 /root/libhybris/androidheaders
+COPY ./android_headers_11 /root/libhybris/androidheaders
 COPY ./android_system/lib64 /system/lib64
 RUN ./autogen.sh
 RUN ./configure \
 		--prefix=/opt/libhybris \
-		--enable-arch=arm64 \
+		--enable-arch=x86-64 \
+		--enable-experimental \
 		--with-android-headers=/root/libhybris/androidheaders
 RUN make -j10
 RUN make clean

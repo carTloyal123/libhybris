@@ -58,8 +58,8 @@ hybris/vibrator/libvibrator.pc
 hybris/wifi/libwifi.pc
 
 # System Files
-android_headers
-android_system
+android_headers**
+android_system**
 
 # Util binaries
 hybris/utils/getprop

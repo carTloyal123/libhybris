@@ -2,4 +2,4 @@ services:
   libhybris:
     build: 
       context: .
-      dockerfile: ./docker/dockerfile
+      dockerfile: ./docker/Dockerfile
