@@ -60,6 +60,7 @@ hybris/wifi/libwifi.pc
 # System Files
 android_headers**
 android_system**
+external**
 
 # Util binaries
 hybris/utils/getprop

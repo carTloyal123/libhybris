@@ -20,8 +20,8 @@ COPY ./android_system/lib64 /system/lib64
 RUN ./autogen.sh
 RUN ./configure \
 		--prefix=/opt/libhybris \
-		--enable-arch=x86-64 \
 		--enable-experimental \
+		--enable-arch=arm64 \
 		--with-android-headers=/root/libhybris/androidheaders
 RUN make -j10
 RUN make clean
